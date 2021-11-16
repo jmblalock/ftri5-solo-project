@@ -7,7 +7,7 @@
     "build": "webpack",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod": "npm run build -- --mode production",
-    "dev": "npm run build -- --mode development",
+    "dev": "npm run build -- --mode development --watch",
     "prod:debug": "npm run debug -- --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:debug": "npm run debug -- --mode development"
