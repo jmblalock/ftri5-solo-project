@@ -7,8 +7,28 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/button.js":
+/*!***********************!*\
+  !*** ./src/button.js ***!
+  \***********************/
+/***/ ((module) => {
+
+eval("// take a str, the button lable and return an element\nmodule.exports = (buttonName) => {\n  return `Button: ${buttonName}`;\n};\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/button.js?");
+
+/***/ }),
+
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"top\": () => (/* binding */ top),\n/* harmony export */   \"bottom\": () => (/* binding */ bottom)\n/* harmony export */ });\nconst top = \"top\";\nconst bottom = \"bottom\";\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/footer.js?");
+
+/***/ }),
 
 /***/ "./src/index.js":
 /*!**********************!*\
@@ -16,7 +36,8 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n\n\nconsole.log((0,_nav__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./button */ \"./src/button.js\");\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nconsole.log((0,_nav__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), _footer__WEBPACK_IMPORTED_MODULE_1__.top, _footer__WEBPACK_IMPORTED_MODULE_1__.bottom, _button__WEBPACK_IMPORTED_MODULE_2___default()(\"my first button!\"));\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/index.js?");
 
 /***/ }),
 
@@ -26,6 +47,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => \"nav\");\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/nav.js?");
 
 /***/ })
@@ -57,6 +79,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
