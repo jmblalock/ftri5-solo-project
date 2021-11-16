@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "npm run build -- --mode development",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod": "npm run build -- --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run build -- --mode development",
+    "prod:debug": "npm run debug -- --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:debug": "npm run debug -- --mode development"
   },
   "repository": {
     "type": "git",
