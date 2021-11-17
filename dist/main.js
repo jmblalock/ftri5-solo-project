@@ -9,13 +9,23 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/button-styles.js":
+/*!******************************!*\
+  !*** ./src/button-styles.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("// CommonJS Named Exports\nconst red = \"color: red;\";\nconst blue = \"color: blue;\";\nconst makeColorStyle = (color) => `color: ${color};`;\n\n// instead of...\n/*\nmodule.exports\n*/\n\nexports.red = red;\nexports.blue = blue;\nexports.makeColorStyle = makeColorStyle;\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/button-styles.js?");
+
+/***/ }),
+
 /***/ "./src/button.js":
 /*!***********************!*\
   !*** ./src/button.js ***!
   \***********************/
 /***/ ((module) => {
 
-eval("// take a str, the button lable and return an element\nmodule.exports = (buttonName) => {\n  return `Button: ${buttonName}`;\n};\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/button.js?");
+eval("/**\n *\n * @param {string} buttonName\n * @returns {Element}\n */\n\n// commonJS export syntax\n// module.exports = (buttonName) => {\n//   return `Button: ${buttonName}`;\n// };\n\n// same, same, but different\nconst makeButton = (buttonName) => {\n  return `Button: ${buttonName}`;\n};\n\nmodule.exports = makeButton;\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/button.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("// take a str, the button lable and return an element\nmodule.exports = (b
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"top\": () => (/* binding */ top),\n/* harmony export */   \"bottom\": () => (/* binding */ bottom)\n/* harmony export */ });\nconst top = \"top\";\nconst bottom = \"bottom\";\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"top\": () => (/* binding */ top),\n/* harmony export */   \"bottom\": () => (/* binding */ bottom)\n/* harmony export */ });\n// this works...\n// export const top = \"top\";\n// export const bottom = \"bottom\";\n\n// this is better...\n// destructuring\nconst top = \"top\";\nconst bottom = \"bottom\";\n\n\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/footer.js?");
 
 /***/ }),
 
@@ -37,7 +47,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./button */ \"./src/button.js\");\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nconsole.log((0,_nav__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), _footer__WEBPACK_IMPORTED_MODULE_1__.top, _footer__WEBPACK_IMPORTED_MODULE_1__.bottom, _button__WEBPACK_IMPORTED_MODULE_2___default()(\"my first button!\"));\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./button */ \"./src/button.js\");\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_button__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _button_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./button-styles */ \"./src/button-styles.js\");\n\n\n\n\n// only pull in what you are using\n// webpack bundles...only what you are using\n\n\nconsole.log((0,_nav__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), _footer__WEBPACK_IMPORTED_MODULE_1__.top, _footer__WEBPACK_IMPORTED_MODULE_1__.bottom, _button__WEBPACK_IMPORTED_MODULE_2___default()(\"my first button!\"), (0,_button_styles__WEBPACK_IMPORTED_MODULE_3__.makeColorStyle)(\"cyan\"));\n\n\n//# sourceURL=webpack://ftri5-solo-project/./src/index.js?");
 
 /***/ }),
 
