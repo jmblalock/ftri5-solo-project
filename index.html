@@ -8,52 +8,6 @@
   </head>
   <body>
     <div id="app"></div>
-    <script
-      crossorigin
-      src="https://unpkg.com/react@17/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-    ></script>
-    <script>
-      const MyTitle = function (props) {
-        return React.createElement(
-          "div",
-          null,
-          React.createElement(
-            "h1",
-            { style: { color: props.color } },
-            React.createElement("h4", null, props.title)
-          )
-        );
-      };
-
-      const MyFirstComponent = function () {
-        return React.createElement("div", null, [
-          React.createElement(MyTitle, {
-            title: "Game of Thrones",
-            color: "YellowGreen",
-          }),
-          React.createElement(MyTitle, {
-            title: "Stranger Things",
-            color: "GreenYellow",
-          }),
-          React.createElement(MyTitle, {
-            title: "Rick and Morty",
-            color: "LimeGreen",
-          }),
-          React.createElement(MyTitle, {
-            title: "Silicon Valley",
-            color: "Lime",
-          }),
-        ]);
-      };
-
-      ReactDOM.render(
-        React.createElement(MyFirstComponent),
-        document.getElementById("app")
-      );
-    </script>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>
