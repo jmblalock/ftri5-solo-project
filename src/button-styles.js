@@ -8,6 +8,4 @@ const makeColorStyle = (color) => `color: ${color};`;
 module.exports
 */
 
-exports.red = red;
-exports.blue = blue;
-exports.makeColorStyle = makeColorStyle;
+export { red, blue, makeColorStyle };
