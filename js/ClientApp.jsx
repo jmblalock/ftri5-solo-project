@@ -1,3 +1,6 @@
+import React from "react";
+import { render } from "react-dom";
+
 const MyTitle = function (props) {
   return React.createElement(
     "div",
@@ -31,7 +34,4 @@ const MyFirstComponent = function () {
   ]);
 };
 
-ReactDOM.render(
-  React.createElement(MyFirstComponent),
-  document.getElementById("app")
-);
+render(React.createElement(MyFirstComponent), document.getElementById("app"));
