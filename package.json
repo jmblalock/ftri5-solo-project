@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "webpack-dev-server": "webpack-dev-server",
-    "webpack": "webpack",
+    "webpack": "webpack --watch",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod": "npm run webpack -- --mode production",
     "dev": "npm run webpack-dev-server -- --mode development",
     "prod:debug": "npm run debug -- --mode production --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:debug": "npm run debug -- --mode development",
-    "api": "node ratingsAPI.js"
+    "api": "node ratingsAPI.js",
+    "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js, jsx}\" --quiet"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "@babel/plugin-proposal-decorators": "^7.16.4",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
     "@pixelmatters/eslint-config-react": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "babel-loader": "^8.2.3",
