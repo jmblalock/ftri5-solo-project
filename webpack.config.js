@@ -1,12 +1,10 @@
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const path = require("path");
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
-  context: __dirname,
   entry: "./js/ClientApp.jsx",
   output: {
-    path: path.join(__dirname, "public"),
     filename: "bundle.js",
   },
   resolve: {
@@ -25,5 +23,9 @@ module.exports = {
       },
     ],
   },
-  plugins: [new HtmlWebPackPlugin(), new webpack.ProgressPlugin()],
+  plugins: [
+    new HtmlWebPackPlugin(),
+    new webpack.ProgressPlugin(),
+    new ESLintPlugin(),
+  ],
 };
