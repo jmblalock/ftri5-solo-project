@@ -6,9 +6,10 @@ const App = () => (
     <div className="landing">
       <h1>Learning Log</h1>
       <input type="text" placeholder="" />
-      <a>Add Learning</a>
-      <a>Edit Learning</a>
-      <a>Delete Learning</a>
+      <a>Add </a>
+      <a>Edit </a>
+      <div />
+      <a>Delete</a>
     </div>
   </div>
 );
