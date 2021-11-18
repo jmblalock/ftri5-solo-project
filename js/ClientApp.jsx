@@ -4,9 +4,11 @@ import { render } from "react-dom";
 const App = () => (
   <div className="app">
     <div className="landing">
-      <h1>svideo</h1>
-      <input type="text" placeholder="Search" />
-      <a>or Browse All</a>
+      <h1>Learning Log</h1>
+      <input type="text" placeholder="" />
+      <a>Add Learning</a>
+      <a>Edit Learning</a>
+      <a>Delete Learning</a>
     </div>
   </div>
 );
